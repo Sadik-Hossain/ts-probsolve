@@ -44,7 +44,7 @@ function prettyNum(start, end) {
 }
 // console.log(prettyNum(1,10)) 
 // console.log(prettyNum(11,33)) 
-// ### problem no:6 https://www.codechef.com/submit/DOLL
+// ### problem no:7 https://www.codechef.com/submit/DOLL
 function doll(heightOfAliAndG, ...args) {
     // console.log(...args)
     const deathRequired = [...args].filter(e => e > heightOfAliAndG);

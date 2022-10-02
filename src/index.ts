@@ -52,7 +52,7 @@ return(arr.filter(e=>e=="2"||e=="3"||e=="9").length)
 // console.log(prettyNum(11,33)) 
 
 
-// ### problem no:6 https://www.codechef.com/submit/DOLL
+// ### problem no:7 https://www.codechef.com/submit/DOLL
 function doll (heightOfAliAndG:number,...args:number[]) {
 // console.log(...args)
 const deathRequired=[...args].filter(e=>e>heightOfAliAndG)
