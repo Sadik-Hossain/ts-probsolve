@@ -1,7 +1,5 @@
 // ### problem no:1 https://www.codechef.com/submit/BURGERS
 function burger(patties:number,bun:number){
-
-
     //1 burger needs 1bun , 1pattie
   const burger = Math.min(patties,bun)
         return burger;
@@ -52,3 +50,16 @@ return(arr.filter(e=>e=="2"||e=="3"||e=="9").length)
 }
 // console.log(prettyNum(1,10)) 
 // console.log(prettyNum(11,33)) 
+
+
+// ### problem no:6 https://www.codechef.com/submit/DOLL
+function doll (heightOfAliAndG:number,...args:number[]) {
+// console.log(...args)
+const deathRequired=[...args].filter(e=>e>heightOfAliAndG)
+return deathRequired.length
+
+
+}
+// * 1st argument must be the height of ali and gi, and the rest's are participants height, output will be how many people need to get shot, so ali and gi can see eachother
+// console.log(doll(10,2 ,13 ,4 ,16))
+// console.log(doll(8,9 ,3, 8, 8, 4))
