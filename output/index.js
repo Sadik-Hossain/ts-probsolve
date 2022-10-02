@@ -64,3 +64,15 @@ function manipulate(guardsAbleToManipulate, totalGuards) {
 // console.log(manipulate(5,7))
 // console.log(manipulate(6,6))
 // console.log(manipulate(9,1))
+// ### problem no:9 https://www.codechef.com/submit/BATTERYLOW
+function batteryLow(battery) {
+    if (battery <= 15) {
+        return "YES";
+    }
+    else {
+        return "NO";
+    }
+}
+// console.log(batteryLow(3))
+// console.log(batteryLow(15))
+// console.log(batteryLow(65))
