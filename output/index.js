@@ -76,3 +76,21 @@ function batteryLow(battery) {
 // console.log(batteryLow(3))
 // console.log(batteryLow(15))
 // console.log(batteryLow(65))
+// ### problem no:10 https://www.codechef.com/submit/TRUESCORE
+function trueScore(...args) {
+    console.log([...args]);
+    const currentTeamAScore = [...args][0];
+    const currentTeamBScore = [...args][1];
+    const predictTeamAScore = [...args][2];
+    const predictTeamBScore = [...args][3];
+    if (currentTeamAScore <= predictTeamAScore && currentTeamBScore <= predictTeamBScore) {
+        return "POSSIBLE";
+    }
+    else {
+        return "IMPOSSIBLE";
+    }
+}
+//* The first 2 args contains two integers- the intial number of goals team A and team B have scored respectively.The second 2 args contains two integers the final number of goals team A and team B must be able to score respectively.
+// console.log(trueScore(1,5,3,5))
+// console.log(trueScore(3,4,2,6))
+// console.log(trueScore(2,2,2,2))
