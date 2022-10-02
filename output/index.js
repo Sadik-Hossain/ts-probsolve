@@ -31,9 +31,15 @@ function prizeMoney(topTenPrize, afterTopTenPrize) {
 // console.log(prizeMoney(80,1));
 // console.log(prizeMoney(400,30));
 // ### problem no:5 https://www.codechef.com/submit/PRACTICEPERF
-// function practicePerf (arguments) {
-//     // body
-// }
+function practicePerf(...args) {
+    const targetMet = [...args].filter(e => e >= 10);
+    return targetMet.length;
+}
+// * 4 integers represents the number of problem solved in 4 weeks , if the taget threshold for each week problem soving reach 10,  the number of weeks in which Chef met his target is returned.
+practicePerf(12, 15, 8, 10);
+practicePerf(2, 3, 1, 10);
+practicePerf(12, 100, 99, 11);
+practicePerf(1, 1, 1, 1);
 // ### problem no:6 https://www.codechef.com/submit/NUM239
 function prettyNum(start, end) {
     let arr = [];
