@@ -46,10 +46,21 @@ function prettyNum(start, end) {
 // console.log(prettyNum(11,33)) 
 // ### problem no:7 https://www.codechef.com/submit/DOLL
 function doll(heightOfAliAndG, ...args) {
-    // console.log(...args)
     const deathRequired = [...args].filter(e => e > heightOfAliAndG);
     return deathRequired.length;
 }
 // * 1st argument must be the height of ali and gi, and the rest's are participants height, output will be how many people need to get shot, so ali and gi can see eachother
 // console.log(doll(10,2 ,13 ,4 ,16))
 // console.log(doll(8,9 ,3, 8, 8, 4))
+// ### problem no:8 https://www.codechef.com/submit/MANIPULATE
+function manipulate(guardsAbleToManipulate, totalGuards) {
+    if (guardsAbleToManipulate >= totalGuards) {
+        return "YES";
+    }
+    else {
+        return "NO";
+    }
+}
+// console.log(manipulate(5,7))
+// console.log(manipulate(6,6))
+// console.log(manipulate(9,1))
