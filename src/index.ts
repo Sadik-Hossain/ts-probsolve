@@ -70,6 +70,7 @@ return "YES"
     return "NO"
  }
 }
+//* if enzo's power to manipulate can outnumber totalGuards then print yes. else, no
 // console.log(manipulate(5,7))
 // console.log(manipulate(6,6))
 // console.log(manipulate(9,1))
@@ -83,6 +84,7 @@ function batteryLow (battery:number) {
         return "NO"
     }
 }
+//* if battery is lower than 15. then, print yes. else, no
 // console.log(batteryLow(3))
 // console.log(batteryLow(15))
 // console.log(batteryLow(65))
